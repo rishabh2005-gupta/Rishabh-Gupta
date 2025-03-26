@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .store-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .store-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 250px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        textarea {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="store-grid">
+        <div class="store-item">
+            <img src="Joothan.jpg" alt="Joothan">
+            <p><b>Joothan</b></p>
+            <button onclick="window.open('Joothan.pdf', '_blank')">Open to Read</button>
+            <button onclick="saveBook(this)">Save To Read</button>
+            <button onclick="markCompleted(this)">Completed</button>
+            <textarea placeholder="Your feedback"></textarea>
+            <button onclick="submitFeedback(this)">Submit Feedback</button>
+        </div>
+
+        <div class="store-item">
+            <img src="https://www.curzonpr.com/theprinsider/wp-content/uploads/2023/08/surrounded_by_idiots-330x440.png" alt="Surrounded by Idiots">
+            <p><b>Surrounded by Idiots</b></p>
+            <button onclick="window.open('Surrounded by Idiots.pdf', '_blank')">Open to Read</button>
+            <button onclick="saveBook(this)">Save To Read</button>
+            <button onclick="markCompleted(this)">Completed</button>
+            <textarea placeholder="Your feedback"></textarea>
+            <button onclick="submitFeedback(this)">Submit Feedback</button>
+        </div>
+
+        <div class="store-item">
+            <img src="https://i.pinimg.com/originals/8e/44/64/8e44647cc96ff907a46dd424369d8673.jpg" alt="Ikigai">
+            <p><b>Ikigai</b></p>
+            <button onclick="window.open('Ikigai.pdf', '_blank')">Open to Read</button>
+            <button onclick="saveBook(this)">Save To Read</button>
+            <button onclick="markCompleted(this)">Completed</button>
+            <textarea placeholder="Your feedback"></textarea>
+            <button onclick="submitFeedback(this)">Submit Feedback</button>
+        </div>
+
+        <div class="store-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.l__rkoxtGtmvAAbjcGedwAHaLH&pid=Api&P=0&h=180" alt="Annihilation of Caste">
+            <p><b>Annihilation of Caste</b></p>
+            <button onclick="window.open('Annihilation of Caste.pdf', '_blank')">Open to Read</button>
+            <button onclick="saveBook(this)">Save To Read</button>
+            <button onclick="markCompleted(this)">Completed</button>
+            <textarea placeholder="Your feedback"></textarea>
+            <button onclick="submitFeedback(this)">Submit Feedback</button>
+        </div>
+    </div>
+
+    <script>
+        function saveBook(button) {
+            button.textContent = "Saved!";
+            button.style.backgroundColor = "#ffdd57";
+        }
+
+        function markCompleted(button) {
+            button.textContent = "Completed!";
+            button.style.backgroundColor = "#57ff64";
+        }
+
+    </script>
+
+</body>
+</html>

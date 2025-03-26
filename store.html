@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+        /* Store Section Styling */
+#store {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+
+#store h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Grid Layout for Store Items */
+.store-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+/* Individual Store Item Styling */
+.store-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-item:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.store-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Product Name & Price */
+.store-item p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Button Styling */
+.store-item button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+}
+
+.store-item button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.store-item button:active {
+  background-color: #1f6690;
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .store-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-item {
+    max-width: 90%;
+  }
+
+  .store-item button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section id="store">
+        <h2>Store</h2>
+        <div class="store-grid">
+          <div class="store-item">
+            <img src="Joothan.jpg" alt="Joothan">
+            <p>Joothan- $10</p>
+            <button>Add to Cart</button>
+            <button>Buy</button>
+            <button>Review</button>
+          
+          </div>
+          <div class="store-item">
+            <img src="https://www.curzonpr.com/theprinsider/wp-content/uploads/2023/08/surrounded_by_idiots-330x440.png" alt="surroundedbyidiots" >
+            <p>Surrounded by idiots- $15</p>
+            <button>Add to Cart</button>
+            <button>Buy</button>
+            <button>Review</button>
+          </div>
+          <div class="store-item">
+            <img src="https://i.pinimg.com/originals/8e/44/64/8e44647cc96ff907a46dd424369d8673.jpg" alt="Ikigai">
+            <p>Ikigai- $6</p>
+            <button>Add to Cart</button>
+            <button>Buy</button>
+            <button>Review</button>
+          </div>
+          <div class="store-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.l__rkoxtGtmvAAbjcGedwAHaLH&pid=Api&P=0&h=180" alt="Annihilation of caste">
+            <p>Annihilation of caste- $9</p>
+            <button>Add to Cart</button>
+            <button>Buy</button>
+            <button>Review</button>
+          </div>
+        </div>
+        </section> 
+</body>
+</html>
